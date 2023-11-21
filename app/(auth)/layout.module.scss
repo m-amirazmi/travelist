@@ -1,17 +1,15 @@
-@import './variables/colors.scss';
+@import '../../styles/variables/colors.scss';
 
 .root{
   background-color: $color-blue-2;
   min-height: 100vh;
-  min-width: 100vw;
   display: flex;
   align-items: center;
+
   .container{
     background: $color-white;
     max-width: 500px;
-    width: 100%;
     margin-inline: auto;
-    padding: 48px;
     border-radius: 4px;
   }
 }

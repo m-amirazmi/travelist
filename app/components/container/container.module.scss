@@ -1,8 +1,9 @@
-@import '../../styles/variables/breakpoints.scss';
+@import '../../../styles/variables/breakpoints.scss';
 
 .root{
   margin-inline: auto;
   padding-inline: 24px;
+  width: 100%;
   &.--lg{
     max-width: $width-desktop-lg;
   }
