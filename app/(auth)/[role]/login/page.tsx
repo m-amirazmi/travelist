@@ -1,3 +1,5 @@
+import styles from "@/styles/pages/login.module.scss";
+
 interface IProps {
   params: {
     role: string;
@@ -5,9 +7,7 @@ interface IProps {
 }
 
 const Page: React.FC<IProps> = ({ params }) => {
-  console.log(params);
-
-  return <div>Login page</div>;
+  return <div className={styles["root"]}>Login page</div>;
 };
 
 export default Page;
