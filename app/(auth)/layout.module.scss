@@ -1,12 +1,14 @@
-@import '../../styles/variables/colors.scss';
+@import "../../styles/variables/colors.scss";
 
-.root{
+.root {
   background-color: $color-blue-2;
   min-height: 100vh;
   display: flex;
   align-items: center;
+  width: inherit;
+  color: $color-black;
 
-  .container{
+  .container {
     background: $color-white;
     max-width: 500px;
     margin-inline: auto;

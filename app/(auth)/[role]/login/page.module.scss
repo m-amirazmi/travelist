@@ -1,1 +1,9 @@
-.root{}
+.root {
+  .title {
+    margin-bottom: 12px;
+  }
+  .subtitle {
+    display: flex;
+    gap: 4px;
+  }
+}

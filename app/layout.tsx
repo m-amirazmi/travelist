@@ -4,6 +4,7 @@ import { cn } from "@/lib/classnames";
 import { getServerSession } from "next-auth";
 import { Jost } from "next/font/google";
 import "normalize.css";
+import { prisma } from "@/lib/prisma";
 
 const font = Jost({ subsets: ["latin"] });
 
@@ -18,7 +19,8 @@ export default async function RootLayout({
   children: React.ReactNode;
 }) {
   const user = await getServerSession(authOptions);
-  console.log(user);
+  const test = await prisma.user.findMany();
+  console.log(test);
   return (
     <html lang="en">
       <body className={cn(font.className)}>{children}</body>

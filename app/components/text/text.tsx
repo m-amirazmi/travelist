@@ -22,7 +22,7 @@ const Text: React.FC<IProps> = ({
   tag = "p",
   size = "sm",
   weight = "normal",
-  color = "black",
+  color,
   className,
 }) => {
   const Tag = tag;
